@@ -1,6 +1,6 @@
 # Weather app
 This is a simple weather app in react js using react hooks and api requests.
-![Screenshot 2023-10-09 185810](https://github.com/DharshiBalasubramaniyam/ReactJs-Weather-App/assets/139672976/32a7f167-a354-407a-bde6-d1d2a046a709)
+![Screenshot 2023-10-09 185827](https://github.com/DharshiBalasubramaniyam/ReactJs-Weather-App/assets/139672976/fa494d5b-df47-4100-aeea-f44bbf3cb776)
 
 ![Screenshot 2023-10-09 185525](https://github.com/DharshiBalasubramaniyam/ReactJs-Weather-App/assets/139672976/4a034861-9418-415c-9158-ed194f5ed64b)
 
