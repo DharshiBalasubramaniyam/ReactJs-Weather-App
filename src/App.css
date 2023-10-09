@@ -1,38 +1,132 @@
-.App {
+* {
+  margin: 0; padding: 0;box-sizing: border-box;
+  font-weight: 400; font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  outline: none;
+}
+:root {
+  --main: #d2d2d2;
+  --light: #d2d2d2;
+  --color: #4d4d4d;
+  --blue: rgb(70, 156, 255);
+}
+.container {
+  background-color: var(--main);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 10px;
+}
+.weather-app {
+  background-color: var(--color);
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  max-width: 410px;
+}
+.weather-app  > h1 {
   text-align: center;
+  color: var(--light);
+  font-size: 30px;
+  margin-bottom: 15px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.msg {
+  text-align: center;
+  margin: 12px 0;
+  font-size: 15px;
+  border-radius: 5px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.msg.error {
+  color: red;
+  background-color: rgb(255, 232, 232);
+  padding: 8px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.msg.loading {
+  color: rgb(18, 119, 0);
+  background-color: rgb(221, 255, 231);
+  padding: 8px;
+}
+.search {
+  position: relative;
+  width: 100%;
+}
+.search input {
+  width: 100%;
+  padding: 8px 15px;
+  border: 2px solid var(--main);
+  border-radius: 10px;
+  color: var(--light);
+  font-size: 16px;
+  background-color: transparent;
+}
+.search button {
+  padding: 15px;
+  height: 100%;
+  width: 40px;
+  border: 2px solid var(--main);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  border-radius: 0 10px 10px 0;
+  right: 0;
+  background-color: var(--light);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.search button:hover {
+  background-color: white;
+}
+.search button img {
+  height: 20px;
+  width: 20px;
+}
+.box1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
+  margin-top: 10px;
+  color: var(--blue);
+}
+.box1 img {
+  height: 150px;
+}
+.box1 > h2 {
+  display: flex;
+  align-items: center;
+  color: var(--blue);
+}
+.box1 > h2 img {
+  height: 23px;
+  width: 22px;
+  margin-right: 5px;
+}
+.box1 h1 {
+  font-size: 35px;
+}
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.box2 > div {
+  flex:  1 1 70px;
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10px;
+  align-items: center;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 13px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box2 > div img {
+  width:50px;
+  height: 40px;
+  margin-bottom: 5px;
 }
