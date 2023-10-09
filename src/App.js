@@ -74,7 +74,7 @@ function App() {
   }
 
   async function fetchData() {
-    const api_key = "54afcb1f1a8f482800c0379295f59d9e";
+    const api_key = ""; //your api key
     let api = `https://api.openweathermap.org/data/2.5/forecast?q=${searchWord}&appid=${api_key}`;
     
     try {
